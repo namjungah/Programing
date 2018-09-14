@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="test_css.css"/> <!-- 익스터널을 이용하기 위해 링크를 연결시켜주는 태그 -->
+
+	<style type="text/css">
+		#a1 {/*아이디는 앞에 # / 아이디가 a1이라면 스타일을 파란색으로 하라*/
+			color:blue;
+		}
+		.c1 { /*클래시는 앞에 . / 클래스가 c1이라면 스타일을 보라색으로 하라 */
+			color:green;
+		}
+	</style>
+
+	</head>
+	<body>
+		<div style="color:red;">인라인 : 라인에 직접 입력</div> 	<!-- <div> => 디비전 : css를 html을 통해 스타일을 만드는 태그 / stlye-->
+
+		<div id="a1">a1 인베드 : 스타일을 끌여들어 사용</div>  
+		<div id="a2">a2 인베드 : 스타일을 끌여들어 사용</div>  
+
+		<div class="c1">c1 인베드 : 스타일을 끌여들어 사용</div>  
+		<div class="c3">c3 인베드 : 스타일을 끌여들어 사용</div>  
+
+		<div id="a3">익스터널 : 외부에서 스타일을 로드</div> <!-- 새파일을 만들어 불러우는 방법 -->
+		<div class="c2">익스터널 : 외부에서 스타일을 로드</div>
+		
+		<div style="text-align: center;">글자 가운데 정렬</div>
+		<h1 style="text-align: center;">글자 가운데 정렬</h1> <!-- 반드시 div태그를 통해 스타일을 만들 필요는 없다. -->
+		<h1 id="a4">제목</h1>
+		<h1 class="c1">제목</h1>
+
+		<ins>추가글 : 형태 밑줄</ins> <!-- 인서트의 약자-->
+		<div style="border: solid 1px #000000;">상자모양이 필요할 때</div>  <!-- 상자 모양 그리는 방법-->
+		<br>
+		<div style="border-bottom: solid 1px #000000;">의미 없이 밑줄(모양)이 필요할 때</div>  <!-- 방향을 지정해 일정부분만 선을 치는 방법-->
+
+		</body>
+
+</html>
